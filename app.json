@@ -15,22 +15,12 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+  "platforms": ["ios", "android"],
     "ios": {
-      "supportsTablet": true,
-      "infoPlist": {
-        "NSCameraUsageDescription": "Allow $(PRODUCT_NAME) to access camera.",
-        "NSMicrophoneUsageDescription": "Allow $(PRODUCT_NAME) to access your microphone"
-      },
-      "bundleIdentifier": "com.ismailbecit.eastern"
+      "bundleIdentifier": "com.example.myapp"
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "permissions": [
-        "android.permission.CAMERA"
-      ]
+      "package": "com.example.myapp"
     },
     "web": {
       "bundler": "metro",
